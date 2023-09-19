@@ -1,0 +1,29 @@
+<?php
+
+        
+// Database Connection
+$dbconnect = array(
+    'server' => 'localhost',
+    'dbuser' => 'netc_u_qbank', // Use same db username for other db.
+    'dbpass' => '6-0NOE92eC4N%LMa',
+    'dbname' => 'netc_qbank_db'  
+);
+
+$db = new mysqli (
+        $dbconnect ['server'],
+        $dbconnect ['dbuser'],
+        $dbconnect ['dbpass'],
+        $dbconnect ['dbname']     
+        
+        );
+
+if ($db->connect_errno>0){
+    echo "Database Connect Error";
+    exit;
+}  else {
+    //echo "Success";
+    
+}
+
+
+?>
